@@ -56,9 +56,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C08D0166369A436B93FFEF2F12288215 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9454B179392640669D36FAB1D7DF8CED }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8C7E774106D649B58560AFBF989416A5 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8DA643A768FB4657A0672CB258DB0242 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B9FDE03321374B1290733D219C949C65 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_84F8FFF4BB244F76844334B07BA2DDD3 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -67,5 +67,4 @@ jobs:
           app-name: 'bagisto'
           slot-name: 'Production'
           package: .
-
           
